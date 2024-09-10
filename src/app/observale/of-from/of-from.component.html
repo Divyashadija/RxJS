@@ -1,0 +1,68 @@
+<div class="my-3 mx-3">
+    <h2>Of and From</h2>
+    <br>
+    <strong>Ex - 01 (OF)</strong>
+    <hr>
+
+    <div class="row">
+        <div class="col-md-6">
+            <p class="bg-light border rounded py-2 px-3">
+               <strong>Data: </strong>of('Divya', 'Varsha', 'Dilip', 'Pawan')
+            </p>
+            <hr>
+            <ul id="elContainer"></ul>
+        </div>
+        <div class="col-md-6">
+            <p class="bg-light border rounded py-2 px-3">
+               <strong>Data: </strong>of(&#123;a: 'Divya', b: 'Varsha', c: 'Dilip', d: 'Pawan'&#125;)
+            </p>
+            <hr>
+            <ul>
+                <li>
+                    <strong>a : </strong>{{obsMsg.a}}
+                </li>
+                <li>
+                    <strong>b : </strong>{{obsMsg.b}}
+                </li>
+                <li>
+                    <strong>c : </strong>{{obsMsg.c}}
+                </li>
+                <li>
+                    <strong>d : </strong>{{obsMsg.d}}
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <strong>Ex - 02 (FROM)</strong>
+    <hr>
+    <div class="row">
+        <div class="col-md-4">
+            <strong>Array</strong>
+            <hr>
+            <p class="bg-light py-2 px-3 border rounded">
+                <strong>Data: </strong>from(['Divya', 'Varsha', 'Dilip', 'Pawan'])
+            </p>
+            <hr>
+            <ul id="elContainer3"></ul>
+        </div>
+        <div class="col-md-4">
+            <strong>Promise</strong>
+            <hr>
+            <p class="bg-light py-2 px-3 border rounded">
+                <strong>Data: </strong> Promise to Observable
+            </p>
+            <hr>
+            <ul id="elContainer4"></ul>
+        </div>
+        <div class="col-md-4">
+            <strong>String</strong>
+            <hr>
+            <p class="bg-light py-2 px-3 border rounded">
+                <strong>Data: </strong> String to Observable
+            </p>
+            <hr>
+            <ul id="elContainer5"></ul>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,80 @@
+// .row {
+//     .col-md-12 {
+//       padding: 15px;
+//     }
+  
+//     .list {
+//       display: flex;
+//       flex-wrap: wrap;
+//       list-style-type: none;
+//       padding: 0;
+//       margin: -10px; // Compensate for item margin
+  
+//       li {
+//         flex: 0 0 calc(25% - 20px); // 4 cards per row
+//         margin: 10px;
+  
+//         @media (max-width: 1200px) {
+//           flex: 0 0 calc(33.333% - 20px); // 3 cards per row
+//         }
+  
+//         @media (max-width: 900px) {
+//           flex: 0 0 calc(50% - 20px); // 2 cards per row
+//         }
+  
+//         @media (max-width: 600px) {
+//           flex: 0 0 calc(100% - 20px); // 1 card per row
+//         }
+  
+//         a {
+//           display: block;
+//           padding: 20px;
+//           background-color: white;
+//           border-radius: 8px;
+//           box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+//           text-decoration: none;
+//           color: inherit;
+//           transition: all 0.3s ease;
+  
+//           &:hover {
+//             background: #e3f2fd;
+//             color: #477698;
+//             box-shadow: 0 0 60px #b3cada inset;
+//             text-decoration: none;
+//           }
+//         }
+//       }
+//     }
+//   }
+
+ul.list{
+  list-style-type: none;
+  margin: 40px 10px 10px;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+ 
+ul.list li{
+  width: calc(25% - 20px);
+  margin: 10px;
+}
+
+ul.list li a {
+  background: #f8f8f8;
+  color: #6296bb;
+  transition: .3s ease all;
+  line-height: 1;
+  min-height: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #6296bb;
+}
+
+ul.list li a:hover {
+  background: #e3f2fd;
+  color: #477698;
+  box-shadow: 0 0 60px #b3cada inset;
+  text-decoration: none;
+}

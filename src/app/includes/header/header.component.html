@@ -1,0 +1,19 @@
+<nav class="navbar navbar-light navbar-expand-lg" style="background-color: skyblue;">
+    <div class="container">
+        <a class="navbar-brand" href="#">Observable and Promises</a>
+        <button class="navbar-toggler" type="button" (click)="onNavToggle()" data-bs-toggle="collapse"
+            data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" [class.show]="navOpen" id="navbarNav">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item active">
+                    <a class="nav-link active" aria-current="page" routerLink="/promise" href="#">Promise</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" routerLink="/observable" href="#">Observable</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>

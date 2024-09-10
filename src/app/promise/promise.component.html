@@ -1,0 +1,27 @@
+<div class="container my-3">
+    <h1>Promise</h1>
+    <br>
+     <!-- <h3>{{promiseVal}}</h3> -->
+    <table class="table table-bordered table-hover">
+      <thead class="table-dark">
+        <tr>
+          <th>Brand</th>
+          <th>Hard Disk</th>
+          <th>Color</th>
+          <th>Status</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngIf="promiseVal.brand">
+          <td>{{ promiseVal.brand }}</td>
+          <td>{{ promiseVal.hardDisk }}</td>
+          <td>{{ promiseVal.color }}</td>
+          <td>{{ promiseVal.status }}</td>
+        </tr>
+        <!-- <tr *ngIf="!promiseVal.brand">
+          <td colspan="4" class="text-center">No data available</td>
+        </tr> -->
+      </tbody>
+    </table>
+  </div>
+  
